@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MainActivity">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/main_freshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.example.experiment03.custom.scrollview.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/AdView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" >
+                </androidx.viewpager.widget.ViewPager>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true">
+                    <LinearLayout
+                        android:id="@+id/dotgroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="23dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@color/tablayout_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/ALL"
+                    android:textColor="@color/app_color_black"
+                    android:textSize="30sp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorColor="@color/tablayout_textcolor3"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabSelectedTextColor="@color/tablayout_textcolor2"
+                    app:tabTextColor="@color/tablayout_textcolor1">
+                </com.google.android.material.tabs.TabLayout>
+            </LinearLayout>
+
+                <com.example.experiment03.custom.recycleview.MyRecycleView
+                    android:id="@+id/Task_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/task_background"/>
+
+        </LinearLayout>
+    </com.example.experiment03.custom.scrollview.MyScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/tv_stick_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:background="@color/tablayout_background">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/ALL"
+            android:textColor="@color/app_color_black"
+            android:textSize="30sp"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/tablayout_textcolor3"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/tablayout_textcolor2"
+            app:tabTextColor="@color/tablayout_textcolor1">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Default_sort" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/latest_release" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/max_money" />
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+</RelativeLayout>

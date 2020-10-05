@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">"快赚"</string>
+    <string-array name="nation_list">
+
+    </string-array>
+    <string name="title_activity_main">快赚</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="load">登录</string>
+    <string name="please_load">加载中>>>请等待</string>
+    <string name="menu_home">身份</string>
+    <string name="menu_power">管理</string>
+    <string name="menu_slideshow">查询</string>
+    <string name="menu_main">首页</string>
+    <string name="menu_setting">设置</string>
+    <string name="notice_identity">身份代号(暂定):0为非会员,1为会员</string>
+    <string name="notice_power">权限代号:0为普通用户,1为普通管理员,3为超级管理员</string>
+    <string name="version">YSL v1.0.1</string>
+    <string name="APPname">快赚</string>
+    <string name="cover_text">想赚钱 来快赚</string>
+    <string name="ALL">全部</string>
+    <string name="Default_sort">默认排序</string>
+    <string name="max_money">佣金最高</string>
+    <string name="latest_release">最新发布</string>
+    <string name="save">保存</string>
+    <!--任务详情界面-->
+    <string name="NULL">NULL</string>
+
+    <string name="TaskState0">未领取</string>
+    <string name="TaskState1">待提交</string>
+    <string name="TaskState2">待审核</string>
+    <string name="TaskState3">审核未通过,待再次提交</string>
+    <string name="TaskState4">已完成,奖励已到账</string>
+    <string name="ButtonState0">领取任务</string>
+    <string name="ButtonState1">提交任务</string>
+    <string name="ButtonState2">等待审核</string>
+    <string name="ButtonState4">任务已完成</string>
+</resources>

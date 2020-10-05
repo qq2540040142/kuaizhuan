@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#39627E</item>
+        <item name="colorPrimaryDark">#39627E</item>
+        <!-- <item name="colorAccent">@color/colorAccent</item> -->
+        <item name="colorAccent">@color/theam</item>
+        <item name="colorControlHighlight">#9EA2A5</item>
+        <item name="colorButtonNormal">#39627E</item>
+    </style>
+    <style name="BaseNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+
+</resources>

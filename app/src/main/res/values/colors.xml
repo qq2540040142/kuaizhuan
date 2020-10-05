@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPrimary1">#6200EE</color>
+    <color name="colorPrimaryDark1">#3700B3</color>
+    <color name="colorAccent1">#03DAC5</color>
+
+    <color name="app_color_grey">#125C4B</color>
+    <color name="app_color_black">#000000</color>
+    <color name="app_color_f6">#f6f6f6</color>
+    <color name="app_color_fa">#fafafa</color>
+    <color name="app_color_divider">#FFF59D</color>
+    <color name="app_color_c51">#f94c51</color>
+    <color name="app_color_e0ff6100">#E0FF6100</color>
+    <color name="app_color_green">#43c117</color>
+    <color name="app_color_53575e">#53575e</color>
+    <color name="app_color_transparent">#00000000</color>
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_blue">#7D7DFF</color>
+    <color name="app_color_9b">#FFF59D</color>
+    <color name="app_color_red">#FF0000</color>
+    <color name="theam">#39627E</color>
+    <color name="list">#F9FBE7</color>
+    <color name="editshow">#9AA19C</color>
+    <color name="notice">#FFFFFF</color>
+    <color name="about_bottomtext">#BCBCBC</color>
+    <color name="cover_background">@color/app_color_f6</color>
+    <color name="line">#9CFFFFFF</color>
+
+    <!--  task的TabLayout颜色  -->
+    <color name="tablayout_background">#F3F3F3</color>
+    <color name="tablayout_textcolor1">#4C4C4C</color>
+    <color name="tablayout_textcolor2">#000000</color>
+    <color name="tablayout_textcolor3">#E0FF6100</color>
+
+    <!--  task的RecycleView字体颜色  -->
+    <color name="task_background">#FFFFFF</color>
+    <color name="task_title">#000000</color>
+    <color name="task_money">#FF0000</color>
+    <color name="task_show">#A5A5A5</color>
+    <color name="task_show_background">#F8F8F8</color>
+    <color name="task_number">#A6A6A6</color>
+    <color name="task_line">#CCCCCC</color>
+
+    <!--  taskDetails  -->
+    <color name="taskDetails_Id">#A6A6A6</color>
+    <color name="taskDetails_button">#FFCC80</color>
+    <color name="taskDetails_textViewBackground">#FF7300</color>
+    <color name="taskDetails_taskState">#FFC000</color>
+    <color name="taskDetails_button1">#676767</color>
+</resources>

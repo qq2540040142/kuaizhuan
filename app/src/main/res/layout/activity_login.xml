@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/loginDCIM"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_lin">
+        </ImageView>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/l_username"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginDCIM">
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pid"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/userImg">
+
+            <EditText
+                android:id="@+id/username1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:hint="@string/username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_sex"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l_username">
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_password"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/userImg">
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_sex">
+        <CheckBox
+            android:id="@+id/check_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+
+            android:text="记住账号密码"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/btu_login"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_save">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login2"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/load"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            app:backgroundTint="@color/theam"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btu_mms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+            android:id="@+id/text_mms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:gravity="center"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97811216" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

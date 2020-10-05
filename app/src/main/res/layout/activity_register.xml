@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <!-- 头像 -->
+    <LinearLayout
+        android:id="@+id/l_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="欢迎使用身份注册查询系统"
+            android:textSize="20sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <!-- 姓名 -->
+    <LinearLayout
+        android:id="@+id/l_username"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l_logo">
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pid"></ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/userImg">
+
+            <EditText
+                android:id="@+id/re_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:hint="用户名请填QQ号"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- 密码 -->
+    <LinearLayout
+        android:id="@+id/l_sex"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l_username">
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_password"></ImageView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/userImg">
+
+            <EditText
+                android:id="@+id/re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="密码不得少于7位"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <!-- 所属社团 -->
+    <LinearLayout
+        android:id="@+id/l_address"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_sex" >
+
+        <ImageView
+            android:id="@+id/addressImg"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_tuan"></ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="9">
+
+            <EditText
+                android:id="@+id/re_shetuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="所属组"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <!--手机号-->
+    <LinearLayout
+        android:id="@+id/l_identity"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_address">
+        <ImageView
+            android:id="@+id/image_moblienumber"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_moblienumber"></ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="9">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+            <EditText
+                android:id="@+id/text_identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="身份代号"
+                android:maxLength="11"></EditText>
+
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- 注册按钮 -->
+    <LinearLayout
+        android:id="@+id/btu_regiest"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l_identity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="立即添加"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            app:backgroundTint="@color/theam"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_flash_on_white_24dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.048661802" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97811216" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8978102" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-33dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

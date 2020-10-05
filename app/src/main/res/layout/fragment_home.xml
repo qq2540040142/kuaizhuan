@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.home.HomeFragment"
+    android:layout_gravity="center"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/LYusername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_bakegroud"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+        <!--    主界面个人信息用户名    -->
+        <TextView
+            android:id="@+id/mainusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/mainmoblienumber"/>
+        <!--    主界面个人信息手机号    -->
+        <TextView
+            android:id="@+id/mainmoblienumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/mainidentity"
+            android:textSize="20sp" />
+        <!--    主界面个人身份信息   -->
+        <TextView
+            android:id="@+id/mainidentity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mainsuoshu"
+            android:gravity="center_horizontal"
+            android:text="加载中>>>请等待" />
+        <!--    主界面个人信息所属组    -->
+        <TextView
+            android:id="@+id/mainsuoshu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true" />
+        <!--    主界面个人信息加入时间    -->
+        <TextView
+            android:id="@+id/maintime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/mainsuoshu" />
+        <!--        主界面查询时间         -->
+        <TextView
+            android:id="@+id/mainnowtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/maintime" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_add_green" />
+        <LinearLayout
+            android:id="@+id/btu_changeps"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/mainnowtime">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_changeps"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="修改密码"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                app:backgroundTint="@color/theam"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
